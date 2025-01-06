@@ -44,25 +44,25 @@ if selected == 'Diabetes Prediction':
     with col1:
         Pregnancies = st.text_input('Number of Pregnancies')
 
-    with col2:
+    with col1:
         Glucose = st.text_input('Glucose Level')
 
-    with col3:
+    with col1:
         BloodPressure = st.text_input('Blood Pressure value')
 
-    with col1:
+    with col2:
         SkinThickness = st.text_input('Skin Thickness value')
 
     with col2:
         Insulin = st.text_input('Insulin Level')
 
-    with col3:
+    with col2:
         BMI = st.text_input('BMI value')
 
-    with col1:
+    with col3:
         DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
 
-    with col2:
+    with col3:
         Age = st.text_input('Age of the Person')
 
 
@@ -98,40 +98,40 @@ if selected == 'Heart Disease Prediction':
     with col1:
         age = st.text_input('Age')
 
-    with col2:
+    with col1:
         sex = st.text_input('Sex')
 
-    with col3:
+    with col1:
         cp = st.text_input('Chest Pain types')
 
     with col1:
         trestbps = st.text_input('Resting Blood Pressure')
 
-    with col2:
+    with col1:
         chol = st.text_input('Serum Cholestoral in mg/dl')
 
-    with col3:
+    with col2:
         fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl')
 
-    with col1:
+    with col2:
         restecg = st.text_input('Resting Electrocardiographic results')
 
     with col2:
         thalach = st.text_input('Maximum Heart Rate achieved')
 
-    with col3:
+    with col2:
         exang = st.text_input('Exercise Induced Angina')
 
-    with col1:
+    with col3:
         oldpeak = st.text_input('ST depression induced by exercise')
 
-    with col2:
+    with col3:
         slope = st.text_input('Slope of the peak exercise ST segment')
 
     with col3:
         ca = st.text_input('Major vessels colored by flourosopy')
 
-    with col1:
+    with col3:
         thal = st.text_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect')
 
     # code for Prediction
@@ -165,67 +165,67 @@ if selected == "Parkinsons Prediction":
     with col1:
         fo = st.text_input('MDVP:Fo(Hz)')
 
-    with col2:
+    with col1:
         fhi = st.text_input('MDVP:Fhi(Hz)')
 
-    with col3:
+    with col1:
         flo = st.text_input('MDVP:Flo(Hz)')
 
-    with col4:
+    with col1:
         Jitter_percent = st.text_input('MDVP:Jitter(%)')
 
-    with col5:
+    with col1:
         Jitter_Abs = st.text_input('MDVP:Jitter(Abs)')
 
-    with col1:
+    with col2:
         RAP = st.text_input('MDVP:RAP')
 
     with col2:
         PPQ = st.text_input('MDVP:PPQ')
 
-    with col3:
+    with col2:
         DDP = st.text_input('Jitter:DDP')
 
-    with col4:
+    with col2:
         Shimmer = st.text_input('MDVP:Shimmer')
 
-    with col5:
+    with col2:
         Shimmer_dB = st.text_input('MDVP:Shimmer(dB)')
 
-    with col1:
+    with col3:
         APQ3 = st.text_input('Shimmer:APQ3')
 
-    with col2:
+    with col3:
         APQ5 = st.text_input('Shimmer:APQ5')
 
     with col3:
         APQ = st.text_input('MDVP:APQ')
 
-    with col4:
+    with col3:
         DDA = st.text_input('Shimmer:DDA')
 
-    with col5:
+    with col4:
         NHR = st.text_input('NHR')
 
-    with col1:
+    with col4:
         HNR = st.text_input('HNR')
 
-    with col2:
+    with col4:
         RPDE = st.text_input('RPDE')
 
-    with col3:
+    with col4:
         DFA = st.text_input('DFA')
 
-    with col4:
+    with col5:
         spread1 = st.text_input('spread1')
 
     with col5:
         spread2 = st.text_input('spread2')
 
-    with col1:
+    with col5:
         D2 = st.text_input('D2')
 
-    with col2:
+    with col5:
         PPE = st.text_input('PPE')
 
     # code for Prediction
