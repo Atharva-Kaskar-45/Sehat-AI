@@ -22,8 +22,6 @@ parkinsons_model = pickle.load(open(f'{working_dir}/saved_models/parkinsons_mode
 
 # sidebar for navigation
 with st.sidebar:
-    # Display the custom logo
-    st.image("images/SehatAI_logo.jpg", use_container_width=True)
 
     # Add the option menu
     selected = option_menu(
@@ -33,6 +31,9 @@ with st.sidebar:
         menu_icon="hospital-fill",  
         default_index=0
     )
+
+    # Display the custom logo
+    st.image("images/SehatAI_logo.jpg", use_container_width=True)
 
 
 # Diabetes Prediction Page
