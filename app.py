@@ -22,7 +22,7 @@ parkinsons_model = pickle.load(open(f'{working_dir}/saved_models/parkinsons_mode
 
 # sidebar for navigation
 with st.sidebar:
-    selected = option_menu('Prediction of Disease Outbreaks System',
+    selected = option_menu('Sehat AI: An AI-Powered Multiple Disease Predictor',
 
                            ['Diabetes Prediction',
                             'Heart Disease Prediction',
