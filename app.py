@@ -30,7 +30,7 @@ with st.sidebar:
         'Sehat AI: An AI-Powered Multiple Disease Predictor',
         ['Diabetes Prediction', 'Heart Disease Prediction', 'Parkinsons Prediction'],
         icons=['activity', 'heart', 'person'],
-        menu_icon="cast",  # Use a placeholder icon; it won't display custom images
+        menu_icon="hospital-fill",  
         default_index=0
     )
 
