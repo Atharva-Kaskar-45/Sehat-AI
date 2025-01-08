@@ -4,7 +4,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 # Set page configuration
-st.set_page_config(page_title="Prediction of Disease Outbreaks",
+st.set_page_config(page_title="Sehat AI: An AI-Powered Multiple Disease Predictor",
                    layout="wide",
                    page_icon="images/SehatAI_logo.jpg")
 
