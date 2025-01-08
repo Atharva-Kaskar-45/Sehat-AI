@@ -27,7 +27,7 @@ with st.sidebar:
                            ['Diabetes Prediction',
                             'Heart Disease Prediction',
                             'Parkinsons Prediction'],
-                           menu_icon='images/SehatAI_logo.jpg',
+                           menu_icon='hospital-fill',
                            icons=['activity', 'heart', 'person'],
                            default_index=0)
 
