@@ -1,1 +1,1 @@
-# Prediction-of-Disease-Outbreak
+# Sehat AI: An AI-Powered Multiple Disease Predictor
