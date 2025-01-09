@@ -24,7 +24,7 @@ parkinsons_model = pickle.load(open(f'{working_dir}/saved_models/parkinsons_mode
 with st.sidebar:
 
     # Center the image
-    st.image("images/SehatAI_logo.jpg", width=130, align: center)  # Adjust width
+    st.image("images/SehatAI_logo.jpg", width=130)  # Adjust width
     st.markdown(
         """
         <style>
