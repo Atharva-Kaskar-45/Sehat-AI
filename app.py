@@ -23,21 +23,10 @@ parkinsons_model = pickle.load(open(f'{working_dir}/saved_models/parkinsons_mode
 # sidebar for navigation
 with st.sidebar:
 
-    # Add spacing above the logo for better placement
-    st.markdown("<br>", unsafe_allow_html=True)
-
-    # Center and display the custom logo using st.image
-    st.markdown(
-        """
-        <div style="text-align: center;">
-            <img src="images/SehatAI_logo.jpg" alt="Sehat AI Logo" width="130">
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
-    # Add some spacing below the logo
-    st.markdown("<br>", unsafe_allow_html=True)
+    # Center the image
+    st.markdown("<br>", unsafe_allow_html=True)  # Add spacing above
+    st.image("images/SehatAI_logo.jpg", width=130)  # Adjust width
+    st.markdown("<br>", unsafe_allow_html=True)  # Add spacing below
 
     # Add the option menu
     selected = option_menu(
