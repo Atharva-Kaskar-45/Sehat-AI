@@ -26,7 +26,7 @@ with st.sidebar:
     # Add spacing above the logo for better placement
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # Center the custom logo with reduced size
+    # Center and display the custom logo using st.image
     st.markdown(
         """
         <div style="text-align: center;">
@@ -47,9 +47,6 @@ with st.sidebar:
         menu_icon="hospital-fill",  
         default_index=0
     )
-
-    # Display the custom logo
-    st.image("images/SehatAI_logo.jpg", use_container_width=True)
 
 
 # Diabetes Prediction Page
