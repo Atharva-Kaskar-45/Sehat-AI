@@ -24,8 +24,19 @@ parkinsons_model = pickle.load(open(f'{working_dir}/saved_models/parkinsons_mode
 with st.sidebar:
 
     # Center the image
-    st.markdown("<br>", unsafe_allow_html=True)  # Add spacing above
-    st.image("images/SehatAI_logo.jpg", width=130)  # Adjust width
+    st.image("images/SehatAI_logo.jpg", width=130, align: center)  # Adjust width
+    st.markdown(
+        """
+        <style>
+        .centered-image {
+            display: flex;
+            justify-content: center;
+        }
+        </style>
+        <div class="centered-image">
+        """,
+        unsafe_allow_html=True
+    )
     st.markdown("<br>", unsafe_allow_html=True)  # Add spacing below
 
     # Add the option menu
