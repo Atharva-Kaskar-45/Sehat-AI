@@ -79,12 +79,11 @@ Python 3.7+: Ensure you have a compatible version of Python installed.
 
 ## Screenshots
 
-![Parkinsons Disease Prediction]("C:\Users\athar\OneDrive\Desktop\Parkinsons_screenshot.png")
+<img src="images/Parkinsons_screenshot.jpg" alt="Parkinsons Prediction"/>
 
-![Heart Disease Prediction]("C:\Users\athar\OneDrive\Desktop\Heart_screenshot.png")
+<img src="images/Heart_screenshot.jpg" alt="Heart Disease Prediction"/>
 
-![Diabetes Prediction]("C:\Users\athar\OneDrive\Desktop\Diabetes_screenshot.png")
-
+<img src="images/Diabetes_screenshot.jpg" alt="Diabetes Prediction"/>
 
 ## Contributing 🧑‍💻
 We welcome contributions to improve Sehat AI! To contribute, follow these steps:
