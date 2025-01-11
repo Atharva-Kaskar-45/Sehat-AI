@@ -29,50 +29,50 @@ https://sehat-ai-app.streamlit.app/
 
 ## Features🚀 
 
-- AI-Powered Disease Prediction: Sehat AI analyzes user input such as medical history, test results to predict the likelihood of developing multiple diseases.
+AI-Powered Disease Prediction: Sehat AI analyzes user input such as medical history, test results to predict the likelihood of developing multiple diseases.
 
-- Real-Time Risk Assessments: Based on the provided data, the app delivers real-time predictions, allowing users to take timely preventive actions.
+Real-Time Risk Assessments: Based on the provided data, the app delivers real-time predictions, allowing users to take timely preventive actions.
 
-- User-Friendly Interface: The intuitive and interactive interface ensures that users can easily input their health data and understand the results.
+User-Friendly Interface: The intuitive and interactive interface ensures that users can easily input their health data and understand the results.
 
-- Secure and Scalable: Sehat AI ensures data privacy and security while being scalable to support more users as the app grows and adds more disease predictions.
+Secure and Scalable: Sehat AI ensures data privacy and security while being scalable to support more users as the app grows and adds more disease predictions.
 
 
 ## Tech Stack 📦
 
 1. Frontend/UI:
-- Streamlit 🌐 for building the interactive web application.
-- Streamlit Option Menu 🖥️ for sidebar navigation.
+Streamlit 🌐 for building the interactive web application.
+Streamlit Option Menu 🖥️ for sidebar navigation.
 
 2. Backend/Prediction Logic:
-- Python 🐍 for handling logic and predictions.
-- Pickle 🥒 to load pre-trained machine learning models.
+Python 🐍 for handling logic and predictions.
+Pickle 🥒 to load pre-trained machine learning models.
 
 3. Machine Learning Framework:
-- scikit-learn 📊 for training models.
+scikit-learn 📊 for training models.
 
 4. Hosting/Deployment:
-- Streamlit Cloud ☁️ for deployment.
-- Google Colab 📚 for training and saving models.
+Streamlit Cloud ☁️ for deployment.
+Google Colab 📚 for training and saving models.
 
 5. Libraries:
-- Pandas and NumPy 📦 for data processing and transformation.
+Pandas and NumPy 📦 for data processing and transformation.
 
 ## Installation and Setup 💻🔧
 
 1. Prerequisites
-- Python 3.7+: Ensure you have a compatible version of Python installed.
-- Pip (Python package manager): Required to install the dependencies.
+Python 3.7+: Ensure you have a compatible version of Python installed.
+Pip (Python package manager): Required to install the dependencies.
 
 2. Steps to Run Locally
-- git clone https://github.com/Atharva-Kaskar-45/Sehat-AI
-- cd sehat-ai
+git clone https://github.com/Atharva-Kaskar-45/Sehat-AI
+cd sehat-ai
 
 3. Install Dependencies:
-- pip install -r requirements.txt
+pip install -r requirements.txt
 
 4. Run the Application:
-- streamlit run app.py
+streamlit run app.py
 
 ## Screenshots
 
