@@ -6,19 +6,26 @@ Access the live version of Sehat AI here:
 https://sehat-ai-app.streamlit.app/
 
 ## Introduction
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <div>
-    <h1>Sehat AI</h1>
-    <p>
-Sehat AI is an AI-powered web application designed to predict multiple diseases based on user-provided health data. Currently, the app predicts the risk of Diabetes, Heart Disease, and Parkinson's Disease, providing users with valuable insights into their health status. The app uses machine learning models to analyze health indicators and predict potential health risks.
-
-In the future, Sehat AI aims to expand its predictions to include a broader range of diseases, offering even more personalized health assessments.
-    </p>
-  </div>
-  <div>
-    <img src="images/SehatAI_logo.jpg" alt="Sehat AI Logo" width="150"/>
-  </div>
-</div>
+<table>
+  <tr>
+    <td style="text-align: left; vertical-align: top;">
+      <h1>Sehat AI</h1>
+      <p>
+        Sehat AI is an AI-powered web application designed to predict multiple diseases based on user-provided health data. 
+        Currently, the app predicts the risk of Diabetes, Heart Disease, and Parkinson's Disease, providing users with 
+        valuable insights into their health status. The app uses machine learning models to analyze health indicators 
+        and predict potential health risks.
+      </p>
+      <p>
+        In the future, Sehat AI aims to expand its predictions to include a broader range of diseases, offering even more 
+        personalized health assessments.
+      </p>
+    </td>
+    <td style="text-align: right; vertical-align: top;">
+      <img src="images/SehatAI_logo.jpg" alt="Sehat AI Logo" width="150"/>
+    </td>
+  </tr>
+</table>
 
 ## Features🚀 
 
