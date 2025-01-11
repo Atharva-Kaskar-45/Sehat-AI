@@ -11,7 +11,7 @@ Sehat AI is an AI-powered web application designed to predict multiple diseases 
 
 In the future, Sehat AI aims to expand its predictions to include a broader range of diseases, offering even more personalized health assessments.
 
-![Sehat AI Logo]("images/SehatAI_logo.jpg")
+![Sehat AI Logo](images/SehatAI_logo.jpg)
 
 ## Features🚀 
 
