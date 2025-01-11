@@ -41,21 +41,22 @@ Secure and Scalable: Sehat AI ensures data privacy and security while being scal
 ## Tech Stack 📦
 
 1. Frontend/UI:
+   
 <br> Streamlit 🌐 for building the interactive web application. 
 <br> Streamlit Option Menu 🖥️ for sidebar navigation. 
 
-2. Backend/Prediction Logic:
+3. Backend/Prediction Logic:
 Python 🐍 for handling logic and predictions.
 Pickle 🥒 to load pre-trained machine learning models.
 
-3. Machine Learning Framework:
+4. Machine Learning Framework:
 scikit-learn 📊 for training models.
 
-4. Hosting/Deployment:
+5. Hosting/Deployment:
 Streamlit Cloud ☁️ for deployment.
 Google Colab 📚 for training and saving models.
 
-5. Libraries:
+6. Libraries:
 Pandas and NumPy 📦 for data processing and transformation.
 
 ## Installation and Setup 💻🔧
