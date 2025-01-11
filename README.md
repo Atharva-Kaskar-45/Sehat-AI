@@ -108,5 +108,5 @@ Sehat AI was created to bridge the gap in early disease detection by utilizing t
 For any questions, suggestions, or collaborations, feel free to reach out:
 
 - Email: atharvakaskar45@gmail.com
-- GitHub: https://github.com/Atharva-Kaskar-45/Sehat-AI
+- GitHub: https://github.com/Atharva-Kaskar-45
 - LinkedIn: https://www.linkedin.com/in/atharva-kaskar-00114324a/
