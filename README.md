@@ -79,11 +79,11 @@ Python 3.7+: Ensure you have a compatible version of Python installed.
 
 ## Screenshots
 
-<img src="images/Parkinsons_screenshot.jpg" alt="Parkinsons Prediction"/>
+<img src="images/Parkinsons_screenshot.png" alt="Parkinsons Prediction"/> <br>
 
-<img src="images/Heart_screenshot.jpg" alt="Heart Disease Prediction"/>
+<img src="images/Heart_screenshot.png" alt="Heart Disease Prediction"/>  <br>
 
-<img src="images/Diabetes_screenshot.jpg" alt="Diabetes Prediction"/>
+<img src="images/Diabetes_screenshot.png" alt="Diabetes Prediction"/>  <br>
 
 ## Contributing 🧑‍💻
 We welcome contributions to improve Sehat AI! To contribute, follow these steps:
