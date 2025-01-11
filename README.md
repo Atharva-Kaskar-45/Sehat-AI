@@ -22,7 +22,7 @@ https://sehat-ai-app.streamlit.app/
       </p>
     </td>
     <td style="text-align: right; vertical-align: top;">
-      <img src="images/SehatAI_logo.jpg" alt="Sehat AI Logo" width="300"/>
+      <img src="images/SehatAI_logo.jpg" alt="Sehat AI Logo" width="500"/>
     </td>
   </tr>
 </table>
