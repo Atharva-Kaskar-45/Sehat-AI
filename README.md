@@ -29,13 +29,13 @@ https://sehat-ai-app.streamlit.app/
 
 ## Features🚀 
 
-AI-Powered Disease Prediction: Sehat AI analyzes user input such as medical history, test results to predict the likelihood of developing multiple diseases.
+- AI-Powered Disease Prediction: Sehat AI analyzes user input such as medical history, test results to predict the likelihood of developing multiple diseases.
 
-Real-Time Risk Assessments: Based on the provided data, the app delivers real-time predictions, allowing users to take timely preventive actions.
+- Real-Time Risk Assessments: Based on the provided data, the app delivers real-time predictions, allowing users to take timely preventive actions.
 
-User-Friendly Interface: The intuitive and interactive interface ensures that users can easily input their health data and understand the results.
+- User-Friendly Interface: The intuitive and interactive interface ensures that users can easily input their health data and understand the results.
 
-Secure and Scalable: Sehat AI ensures data privacy and security while being scalable to support more users as the app grows and adds more disease predictions.
+- Secure and Scalable: Sehat AI ensures data privacy and security while being scalable to support more users as the app grows and adds more disease predictions.
 
 
 ## Tech Stack 📦
@@ -62,17 +62,20 @@ Secure and Scalable: Sehat AI ensures data privacy and security while being scal
 
 1. Prerequisites
 Python 3.7+: Ensure you have a compatible version of Python installed.
-Pip (Python package manager): Required to install the dependencies.
+<br> Pip (Python package manager): Required to install the dependencies.
 
 2. Steps to Run Locally
-git clone https://github.com/Atharva-Kaskar-45/Sehat-AI
-cd sehat-ai
+   ```bash
+   git clone https://github.com/Atharva-Kaskar-45/Sehat-AI 
+   cd sehat-ai
 
-3. Install Dependencies:
-pip install -r requirements.txt
+4. Install Dependencies:
+   ```bash
+   pip install -r requirements.txt
 
-4. Run the Application:
-streamlit run app.py
+5. Run the Application:
+   ```bash
+   streamlit run app.py
 
 ## Screenshots
 
@@ -89,7 +92,7 @@ We welcome contributions to improve Sehat AI! To contribute, follow these steps:
 
 2. Create a new branch for your feature or bug fix:
    ```bash
-git checkout -b feature-name
+   git checkout -b feature-name
 
 
 4. Commit your changes and push them to your fork.
