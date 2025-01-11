@@ -41,8 +41,8 @@ Secure and Scalable: Sehat AI ensures data privacy and security while being scal
 ## Tech Stack 📦
 
 1. Frontend/UI:
-Streamlit 🌐 for building the interactive web application.
-Streamlit Option Menu 🖥️ for sidebar navigation.
+Streamlit 🌐 for building the interactive web application. <br>
+Streamlit Option Menu 🖥️ for sidebar navigation. <br>
 
 2. Backend/Prediction Logic:
 Python 🐍 for handling logic and predictions.
