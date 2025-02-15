@@ -1,4 +1,3 @@
-import React from "react";
 import logo from '../assets/SehatAI_logo.jpg'
 import arrow from '../assets/arrow.svg'
 const Header = ()=>{

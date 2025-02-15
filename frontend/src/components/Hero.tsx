@@ -1,4 +1,3 @@
-import React from "react"
 import arrow from '../assets/arrow.svg'
 import heroImage from "../assets/hero_image.jpg"
 const Hero = ()=>{

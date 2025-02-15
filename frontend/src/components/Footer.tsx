@@ -67,10 +67,10 @@ const Footer = ()=>{
         <div className="bg-[#048C80] h-[76px] flex justify-between items-center px-36">
             <p>@SehatAI. All Rights Reserved. @sehatai</p>
             <div className='flex gap-7'>
-            <img src={facebook}></img>
-            <img src={linkedin}></img>
-            <img src={twitter}></img>
-            <img src={youtube}></img>
+            <a href='#'><img src={facebook}></img></a>
+            <a href='#'><img src={linkedin}></img></a>
+            <a href='#'><img src={twitter}></img></a>
+            <a href='#'><img src={youtube}></img></a>
             </div>
             
         </div>
