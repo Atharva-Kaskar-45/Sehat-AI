@@ -2,7 +2,9 @@ import os
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
-
+from get_diabetes_recommendation import SehatAIDiabetesReport
+from get_heart_disease_rec import SehatAIHeartDiseaseReport
+from get_parkinsons_rec import SehatAIParkinsonsReport
 # Set page configuration
 st.set_page_config(page_title="Sehat AI: An AI-Powered Multiple Disease Predictor",
                    layout="wide",
@@ -44,6 +46,8 @@ if selected == 'Diabetes Prediction':
 
     # getting the input data from the user
     col1, col2, col3 = st.columns(3)
+    with col1:
+        patientName = st.text_input('Patient Name')
 
     with col1:
         Pregnancies = st.text_input('Number of Pregnancies')
@@ -69,6 +73,8 @@ if selected == 'Diabetes Prediction':
     with col3:
         Age = st.text_input('Age of the Person')
 
+    with col3:
+        Gender = st.text_input('Gender')
 
     # code for Prediction
     diab_diagnosis = ''
@@ -90,6 +96,37 @@ if selected == 'Diabetes Prediction':
             diab_diagnosis = 'The person is not diabetic'
 
     st.success(diab_diagnosis)
+    language = st.selectbox("Select Language", ["English", "Hindi", "Marathi", "Tamil"])
+
+    if st.button('Get AI Recommendations'):
+        input_data = {
+            "Patient Name": patientName,
+            "Pregnancies": Pregnancies,
+            "Glucose": Glucose,
+            "Blood Pressure": BloodPressure,
+            "Skin Thickness": SkinThickness,
+            "Insulin": Insulin,
+            "BMI": BMI,
+            "Diabetes Pedigree Function": DiabetesPedigreeFunction,
+            "Age": Age,
+            "Gender": Gender
+        }
+        print(input_data)
+    # Collect input data
+        report = SehatAIDiabetesReport(
+         language=language,
+         patient_name=patientName,
+         age=int(Age),
+         gender=Gender,
+         glucose=float(Glucose),
+         blood_pressure=float(BloodPressure),
+         bmi=float(BMI),
+         insulin=float(Insulin)
+        )
+
+        diabetes_report = report.generate_report()
+        st.write(diabetes_report)
+
 
 # Heart Disease Prediction Page
 if selected == 'Heart Disease Prediction':
@@ -98,6 +135,9 @@ if selected == 'Heart Disease Prediction':
     st.title('Heart Disease Prediction using ML')
 
     col1, col2, col3 = st.columns(3)
+
+    with col1:
+        patientName = st.text_input("Patient Name")
 
     with col1:
         age = st.text_input('Age')
@@ -111,8 +151,6 @@ if selected == 'Heart Disease Prediction':
     with col1:
         trestbps = st.text_input('Resting Blood Pressure')
 
-    with col1:
-        chol = st.text_input('Serum Cholestoral in mg/dl')
 
     with col2:
         fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl')
@@ -125,6 +163,9 @@ if selected == 'Heart Disease Prediction':
 
     with col2:
         exang = st.text_input('Exercise Induced Angina')
+
+    with col2:
+        chol = st.text_input('Serum Cholestoral in mg/dl')
 
     with col3:
         oldpeak = st.text_input('ST depression induced by exercise')
@@ -157,6 +198,32 @@ if selected == 'Heart Disease Prediction':
             heart_diagnosis = 'The person does not have any heart disease'
 
     st.success(heart_diagnosis)
+    language = st.selectbox("Select Language", ["English", "Hindi", "Marathi", "Tamil"])
+
+    if st.button('Get AI Recommendations'):
+        report = SehatAIHeartDiseaseReport(
+            language=language,
+            patient_name=patientName,
+            age=int(age),
+            sex=sex,
+            chest_pain_type=cp,
+            resting_bp=int(trestbps),  # Convert to int
+            fasting_blood_sugar=int(fbs),  # Convert to int
+            rest_ecg=int(restecg),  # Convert to int
+            max_heart_rate=int(thalach),  # Convert to int
+            exercise_angina=int(exang),  # Convert to int
+            cholesterol=int(chol),  # Convert to int
+            st_depression=float(oldpeak),  # Convert to float (decimal values possible)
+            st_slope=int(slope),  # Convert to int
+            major_vessels=int(ca),  # Convert to int
+            thal=int(thal)  # Convert to int
+        )
+
+
+        diabetes_report = report.generate_report()
+        st.write(diabetes_report)
+   
+
 
 # Parkinson's Prediction Page
 if selected == "Parkinsons Prediction":
@@ -165,6 +232,8 @@ if selected == "Parkinsons Prediction":
     st.title("Parkinson's Disease Prediction using ML")
 
     col1, col2, col3, col4, col5 = st.columns(5)
+    with col1:
+        patientName = st.text_input("Patient Name")
 
     with col1:
         fo = st.text_input('MDVP:Fo(Hz)')
@@ -178,8 +247,7 @@ if selected == "Parkinsons Prediction":
     with col1:
         Jitter_percent = st.text_input('MDVP:Jitter(%)')
 
-    with col1:
-        Jitter_Abs = st.text_input('MDVP:Jitter(Abs)')
+    
 
     with col2:
         RAP = st.text_input('MDVP:RAP')
@@ -196,6 +264,7 @@ if selected == "Parkinsons Prediction":
     with col2:
         Shimmer_dB = st.text_input('MDVP:Shimmer(dB)')
 
+   
     with col3:
         APQ3 = st.text_input('Shimmer:APQ3')
 
@@ -207,6 +276,9 @@ if selected == "Parkinsons Prediction":
 
     with col3:
         DDA = st.text_input('Shimmer:DDA')
+
+    with col3:
+        Jitter_Abs = st.text_input('MDVP:Jitter(Abs)')
 
     with col4:
         NHR = st.text_input('NHR')
@@ -252,3 +324,35 @@ if selected == "Parkinsons Prediction":
             parkinsons_diagnosis = "The person does not have Parkinson's disease"
 
     st.success(parkinsons_diagnosis)
+    language = st.selectbox("Select Language", ["English", "Hindi", "Marathi", "Tamil"])
+
+    if st.button("Get AI Recommendations"):
+     report = SehatAIParkinsonsReport(
+        language=language,
+        patient_name=patientName,
+        fo=float(fo),
+        fhi=float(fhi),
+        flo=float(flo),
+        Jitter_percent=float(Jitter_percent),
+        Jitter_Abs=float(Jitter_Abs),
+        RAP=float(RAP),
+        PPQ=float(PPQ),
+        DDP=float(DDP),
+        Shimmer=float(Shimmer),
+        Shimmer_dB=float(Shimmer_dB),
+        APQ3=float(APQ3),
+        APQ5=float(APQ5),
+        APQ=float(APQ),
+        DDA=float(DDA),
+        NHR=float(NHR),
+        HNR=float(HNR),
+        RPDE=float(RPDE),
+        DFA=float(DFA),
+        spread1=float(spread1),
+        spread2=float(spread2),
+        D2=float(D2),
+        PPE=float(PPE),
+    )
+
+    parkinsons_report = report.generate_report()
+    st.write(parkinsons_report)
