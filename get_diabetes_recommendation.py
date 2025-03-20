@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 import os
 import re  
 load_dotenv()
+
 class SehatAIDiabetesReport:
     def __init__(self, language="English", patient_name="", age=0, gender="", glucose=0, blood_pressure=0, bmi=0, insulin=0):
         self.language = language
